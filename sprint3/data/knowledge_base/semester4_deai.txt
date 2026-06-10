@@ -1,0 +1,25 @@
+DATA ENGINEERING & AI (DEAI)
+
+DEAI is onderdeel van semester 4 van de differentiatie Software Engineering.
+
+Onderwerpen:
+- Datastructuren
+- Algoritmen
+- Data Engineering
+- ETL-processen
+- Datawarehouses
+- Dashboards
+- Machine Learning
+- Neural Networks
+- Large Language Models
+- AI Agents
+
+Leeruitkomsten:
+
+1. Ontwerpen en realiseren van een datastraat met ETL-processen, datawarehouses en dashboards.
+
+2. Analyseren van programmeerproblemen en implementeren van efficiënte datastructuren en algoritmen.
+
+3. Toepassen van machine learning technieken zoals lineaire regressie, decision trees, clustering en neurale netwerken.
+
+4. Ontwerpen en ontwikkelen van een AI-agent inclusief leerstrategie, simulatie en evaluatie.

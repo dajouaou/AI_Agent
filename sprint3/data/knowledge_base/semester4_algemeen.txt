@@ -1,0 +1,21 @@
+SEMESTER 4 - DATA ENGINEERING & AI
+
+Semester 4 bestaat uit 30 EC en combineert de vakken Data Engineering & AI (DEAI) en Personal Development 3 (PD3).
+
+Het semester richt zich op:
+- Data Engineering
+- Datastructuren en Algoritmen
+- Machine Learning
+- Neurale Netwerken
+- Large Language Models
+- AI Agents
+
+Studenten werken fulltime aan:
+- Hoorcolleges
+- Werkcolleges
+- Projecten
+- Niveautests
+- Leercoaching
+- Portfolio-opbouw
+
+Het semester wordt holistisch beoordeeld op basis van activiteiten gedurende het gehele semester.

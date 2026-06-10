@@ -1,0 +1,39 @@
+BEOORDELING SEMESTER 4
+
+Semester 4 wordt holistisch beoordeeld.
+
+Datapunten:
+
+Datapunt 1:
+- LLM-opdracht
+- Sprint 1
+- Probleemanalyse
+- Workflowontwerp
+
+Datapunt 2:
+- Sprint 2
+- Sprint 3
+- Toolonderzoek
+- Prototypeontwikkeling
+- Logging
+- Evaluatie
+
+Niveau-indicaties:
+- Onder niveau
+- Op niveau
+- Boven niveau
+
+Belangrijke beoordelingscriteria:
+- Probleemanalyse
+- Workflow en ontwerp
+- Toolkeuze
+- Prototype
+- Onderzoek en testen
+- Evaluatie en reflectie
+
+De beoordeling wordt gebaseerd op:
+- Sprintreviews
+- Scrumproces
+- Observaties
+- Technische keuzes
+- Eindproduct

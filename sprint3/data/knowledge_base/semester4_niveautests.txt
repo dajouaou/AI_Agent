@@ -1,0 +1,58 @@
+NIVEAUTESTEN DEAI
+
+Week 4:
+DE1 - Data Engineering
+
+Onderwerpen:
+- OLTP en OLAP
+- Dimensies en feiten
+- Source Data Modellen
+- Data-inlaadstrategieën
+- Loggingniveaus
+
+Week 6:
+Datastructuren & Algoritmen
+
+Onderwerpen:
+- Recursie
+- Datastructuren
+- Big O
+- Grafen
+- Sorteeralgoritmen
+
+Week 8:
+DE2 - Data Engineering
+
+Onderwerpen:
+- Datawarehouses
+- Sterschema
+- Snowflaking
+- Slowly Changing Dimensions
+
+Week 10:
+Machine Learning
+
+Onderwerpen:
+- Lineaire regressie
+- Decision Trees
+- Clustering
+- Datapreparatie
+
+Week 12:
+Neurale Netwerken
+
+Onderwerpen:
+- Hidden Layers
+- Activatiefuncties
+- Training
+- Overfitting
+- Recurrent Neural Networks
+
+Week 15:
+AI Agents
+
+Onderwerpen:
+- LLM's
+- AI Agents
+- Workflow Design
+- Agentontwikkeling

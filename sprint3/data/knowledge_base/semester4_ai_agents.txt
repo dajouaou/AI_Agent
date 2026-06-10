@@ -1,0 +1,23 @@
+AI AGENT PROJECT
+
+Tijdens de laatste fase van semester 4 werken studenten aan een AI-Agent project.
+
+Doel:
+Ontwerpen, bouwen, testen en evalueren van een AI-agent.
+
+Projectonderdelen:
+- Probleemanalyse
+- Workflowontwerp
+- Toolonderzoek
+- Prototypeontwikkeling
+- Embeddings
+- Vector Database
+- Logging
+- Feedbackloops
+- Evaluatie
+
+Leeruitkomst:
+
+De student onderzoekt, ontwerpt, realiseert en evalueert binnen een projectgroep een AI-agent voor een praktijkgericht probleem.
+
+De student verantwoordt gemaakte keuzes met experimenten, testresultaten, logging, prototypes en iteratieve verbeteringen.
