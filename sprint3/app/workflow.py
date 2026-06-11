@@ -15,25 +15,32 @@ memory = StateManager()
 
 def create_answer(question, context):
     prompt = f"""
-Beantwoord de vraag kort en duidelijk op basis van de context.
-Gebruik maximaal 5 zinnen.
+Beantwoord de vraag in maximaal 4 duidelijke zinnen.
+Gebruik alleen informatie uit de context.
 
 Vraag: {question}
-
 Context: {context}
-
 Antwoord:
 """
 
-    inputs = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=1024)
+    inputs = tokenizer(
+        prompt,
+        return_tensors="pt",
+        truncation=True,
+        max_length=512
+    )
 
     outputs = model.generate(
         **inputs,
-        max_new_tokens=200,
-        temperature=0.7
+        max_new_tokens=120,
+        do_sample=False
     )
 
     answer = tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+    # ✅ Alleen het deel na "Antwoord:" teruggeven
+    if "Antwoord:" in answer:
+        answer = answer.split("Antwoord:")[-1]
 
     return answer.strip()
 
