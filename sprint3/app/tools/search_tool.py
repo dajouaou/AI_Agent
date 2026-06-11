@@ -4,7 +4,7 @@ from langchain_community.vectorstores import Chroma
 EMBEDDINGS_PATH = "data/embeddings"
 
 
-def search_knowledge(query, k=1):
+def search_knowledge(query, k=3):
     embeddings = HuggingFaceEmbeddings(
         model_name="sentence-transformers/all-MiniLM-L6-v2"
     )
