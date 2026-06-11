@@ -834,3 +834,4 @@
 2026-06-11 01:13:03,223 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
 2026-06-11 01:13:03,339 | INFO | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
 2026-06-11 01:13:03,422 | INFO | Vraag: Wat is mijn cijfer? | Confidence: 70 | Status: answered
+2026-06-11 15:36:32,298 | INFO | Nieuwe vraag: slay queen
