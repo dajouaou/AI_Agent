@@ -6,43 +6,30 @@ from app.logger import log_event
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 
-tokenizer = AutoTokenizer.from_pretrained("google/flan-t5-base")
-model = AutoModelForSeq2SeqLM.from_pretrained("google/flan-t5-base")
+tokenizer = AutoTokenizer.from_pretrained("google/flan-t5-large")
+model = AutoModelForSeq2SeqLM.from_pretrained("google/flan-t5-large")
 # Lokaal gratis model (openai kostte geld)
 
 
 memory = StateManager()
 
 def create_answer(question, context):
-    prompt = f"""
-Beantwoord de vraag in maximaal 4 duidelijke zinnen.
-Gebruik alleen informatie uit de context.
+    # Neem alleen eerste relevante stuk
+    context = context.strip()
 
-Vraag: {question}
-Context: {context}
-Antwoord:
-"""
+    # Splits in zinnen
+    sentences = context.split(". ")
 
-    inputs = tokenizer(
-        prompt,
-        return_tensors="pt",
-        truncation=True,
-        max_length=512
-    )
+    # Pak maximaal 5 duidelijke zinnen
+    clean_sentences = sentences[:5]
 
-    outputs = model.generate(
-        **inputs,
-        max_new_tokens=120,
-        do_sample=False
-    )
+    answer = ". ".join(clean_sentences)
 
-    answer = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    # Zorg dat het eindigt met punt
+    if not answer.endswith("."):
+        answer += "."
 
-    # ✅ Alleen het deel na "Antwoord:" teruggeven
-    if "Antwoord:" in answer:
-        answer = answer.split("Antwoord:")[-1]
-
-    return answer.strip()
+    return answer
 
 def run_workflow(question):
     state = memory.create_state(question)
@@ -51,7 +38,7 @@ def run_workflow(question):
 
     results = search_knowledge(question, k=3) # van 6 naar 3 gegaan want bij meer chunks= meer herhaling
     context = "\n\n".join([result.page_content for result in results])
-    context = context[:1500]
+    context = context[:800]
 
     # bronnen verzamelen
     sources = list(set([
