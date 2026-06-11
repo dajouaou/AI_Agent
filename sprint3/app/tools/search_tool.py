@@ -10,13 +10,14 @@ def search_knowledge(query, k=3):
     )
 
     vector_db = Chroma(
-        persist_directory=EMBEDDINGS_PATH,
-        embedding_function=embeddings
-    )
+    persist_directory=EMBEDDINGS_PATH,
+    embedding_function=embeddings,
+    collection_name="semester4"
+)
 
-    results = vector_db.similarity_search(query, k=k)
+    results = vector_db.similarity_search_with_score(query, k=k)
 
-    return results
+    return [doc for doc, score in results]
 
 
 if __name__ == "__main__":
