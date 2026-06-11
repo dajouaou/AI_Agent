@@ -2,23 +2,26 @@ from app.tools.search_tool import search_knowledge
 from app.tools.validation_tool import validate_answer
 from app.memory.state_manager import StateManager
 from app.logger import log_event
-from langchain_openai import ChatOpenAI
 
-llm = ChatOpenAI(
-    model="gpt-4o-mini",
+from transformers import pipeline
+from langchain_community.llms import HuggingFacePipeline
+
+# Lokaal gratis model (openai kostte geld)
+hf_pipeline = pipeline(
+    "text-generation",
+    model="google/flan-t5-base",
+    max_new_tokens=512,
     temperature=0
 )
+
+llm = HuggingFacePipeline(pipeline=hf_pipeline)
 
 memory = StateManager()
 
 
 def create_answer(question, context):
     prompt = f"""
-Je bent een studie-assistent voor Semester 4 (DEAI & PD3).
-
-Beantwoord de vraag zo concreet en specifiek mogelijk.
-Gebruik alleen informatie uit de context.
-Als het antwoord niet in de context staat, zeg dat duidelijk.
+Beantwoord de vraag zo duidelijk en concreet mogelijk op basis van de context.
 
 Vraag:
 {question}
@@ -30,7 +33,7 @@ Antwoord:
 """
 
     response = llm.invoke(prompt)
-    return response.content
+    return response
 
 def run_workflow(question):
     state = memory.create_state(question)
@@ -40,7 +43,7 @@ def run_workflow(question):
     results = search_knowledge(question, k=6)
     context = "\n\n".join([result.page_content for result in results])
 
-    # ✅ bronnen verzamelen
+    # bronnen verzamelen
     sources = list(set([
         r.metadata.get("source", "Onbekend")
         for r in results
