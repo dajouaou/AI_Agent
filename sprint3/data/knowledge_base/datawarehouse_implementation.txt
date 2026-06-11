@@ -1,0 +1,20 @@
+DATAWAREHOUSE IMPLEMENTATION
+
+Bij datawarehouse implementatie wordt analytische data gestructureerd opgeslagen voor rapportage.
+
+Kenmerken:
+- OLAP gericht
+- Historische data
+- Denormalisatie (bijv. sterschema)
+
+Belangrijke stappen:
+1. Bepalen van granulariteit
+2. Ontwerpen van feitentabellen
+3. Ontwerpen van dimensietabellen
+4. Implementeren van Slowly Changing Dimensions
+5. Laden via ETL
+
+Doel:
+- Snelle analyses
+- Betrouwbare rapportages
+- Business intelligence ondersteuning

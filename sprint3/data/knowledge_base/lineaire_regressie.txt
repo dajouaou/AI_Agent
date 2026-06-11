@@ -1,0 +1,39 @@
+LINEAIRE REGRESSIE – MACHINE LEARNING (HC1)
+
+Lineaire regressie is een supervised machine learning techniek die wordt gebruikt om een continue waarde te voorspellen op basis van één of meerdere onafhankelijke variabelen.
+
+Doel:
+- Voorspellen van numerieke waarden
+- Modelleren van lineaire relaties tussen variabelen
+
+Modelvorm:
+y = ax + b
+waarbij:
+- y = afhankelijke variabele
+- x = onafhankelijke variabele
+- a = helling (coëfficiënt)
+- b = intercept
+
+Belangrijke begrippen:
+- Residuals (fouten)
+- Mean Squared Error (MSE)
+- R-squared (verklaarde variantie)
+
+Multiple Linear Regression:
+- Meerdere onafhankelijke variabelen
+- y = b0 + b1x1 + b2x2 + ... + bnxn
+
+Aannames:
+- Lineair verband
+- Onafhankelijke fouten
+- Homoscedasticiteit
+- Normale verdeling van fouten
+
+Toepassingen:
+- Prijsvoorspelling
+- Trendanalyse
+- Forecasting
+
+Regressie vs Classificatie:
+- Regressie voorspelt een numerieke waarde
+- Classificatie voorspelt een categorie

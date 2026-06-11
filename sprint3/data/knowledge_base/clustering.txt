@@ -1,0 +1,42 @@
+CLUSTERING – MACHINE LEARNING (HC3)
+
+Clustering is een unsupervised machine learning techniek waarbij data automatisch wordt gegroepeerd op basis van overeenkomsten. In tegenstelling tot classificatie zijn er geen vooraf gedefinieerde labels.
+
+Doel van clustering:
+- Ontdekken van verborgen patronen in data
+- Groeperen van vergelijkbare datapunten
+- Structuur aanbrengen in ongestructureerde datasets
+
+Belangrijke begrippen:
+- Intraclusterafstand: afstand tussen punten binnen hetzelfde cluster (zo klein mogelijk)
+- Interclusterafstand: afstand tussen clusters onderling (zo groot mogelijk)
+
+Belangrijke methoden:
+
+1. K-Means Clustering
+- Kies het aantal clusters (k)
+- Initialiseer willekeurige centroiden
+- Wijs elk datapunt toe aan dichtstbijzijnde centroid
+- Herbereken centroiden
+- Herhaal tot stabiliteit
+- Keuze van k kan via de elbow-methode
+
+2. Hiërarchische Clustering
+- Bouwt een clusterhiërarchie (dendrogram)
+- Agglomeratief (van onder naar boven samenvoegen)
+- Divisief (van boven naar beneden splitsen)
+
+3. DBSCAN
+- Gebaseerd op datadichtheid
+- Groepeert punten met voldoende buren
+- Kan outliers detecteren
+
+Clustering vs Classificatie:
+- Clustering: geen labels, ontdekt structuur
+- Classificatie: wel labels, voorspelt categorie
+
+Toepassingen:
+- Klantsegmentatie
+- Afwijkingsdetectie
+- Beeldherkenning
+- Data-exploratie

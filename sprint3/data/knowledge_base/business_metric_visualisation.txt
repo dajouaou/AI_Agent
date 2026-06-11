@@ -1,0 +1,31 @@
+BUSINESS METRIC VISUALISATION
+
+Business metrics zijn meetbare indicatoren die prestaties van een organisatie weergeven.
+
+Voorbeelden van metrics:
+- Omzet
+- Winst
+- Conversieratio
+- Klanttevredenheid
+- Doorlooptijd
+
+Visualisatie wordt gedaan met:
+- Dashboards
+- Grafieken
+- KPI-overzichten
+
+Belangrijke principes:
+- Duidelijkheid
+- Relevantie
+- Correcte schaal
+- Context
+
+Dashboards maken gebruik van:
+- Datawarehouses
+- Feitentabellen
+- Dimensietabellen
+
+Doel:
+- Ondersteunen van besluitvorming
+- Inzicht geven in prestaties
+- Trends zichtbaar maken

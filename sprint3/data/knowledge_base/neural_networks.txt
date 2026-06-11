@@ -1,0 +1,37 @@
+NEURALE NETWERKEN – MACHINE LEARNING
+
+Neurale netwerken zijn machine learning modellen geïnspireerd op het menselijk brein. Ze bestaan uit lagen van neuronen die informatie verwerken.
+
+Belangrijke onderdelen:
+- Input layer
+- Hidden layers
+- Output layer
+- Gewichten (weights)
+- Bias
+- Activatiefuncties
+
+Hidden layers voeren berekeningen uit op basis van gewichten en activatiefuncties zoals:
+- ReLU
+- Sigmoid
+- Tanh
+
+Training van een neuraal netwerk gebeurt via:
+- Forward propagation
+- Loss function
+- Backpropagation
+- Gradient descent
+
+Belangrijke begrippen:
+- Overfitting
+- Underfitting
+- Epoch
+- Learning rate
+
+Recurrent Neural Networks (RNN’s):
+Worden gebruikt voor sequentiële data zoals tekst of tijdreeksen.
+
+Neurale netwerken worden toegepast bij:
+- Beeldherkenning
+- Spraakherkenning
+- Tekstanalyse
+- Predictiemodellen

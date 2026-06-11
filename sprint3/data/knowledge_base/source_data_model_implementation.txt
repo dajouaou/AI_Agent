@@ -1,0 +1,19 @@
+SOURCE DATA MODEL IMPLEMENTATION
+
+Bij implementatie van een source data model wordt het ontwerp omgezet naar een werkende database.
+
+Stappen:
+1. Tabellen aanmaken
+2. Sleutels definiëren
+3. Relaties instellen
+4. Constraints toevoegen
+5. Data integriteit waarborgen
+
+Belangrijk:
+- Normalisatie
+- Consistente datatypes
+- Referentiële integriteit
+
+Het model wordt gebruikt als input voor:
+- ETL-processen
+- Datawarehouse bouw

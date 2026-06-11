@@ -1,0 +1,29 @@
+AI AGENTS – SEMESTER 4
+
+Een AI-agent is een systeem dat autonoom beslissingen neemt op basis van input en een doel.
+
+Onderdelen van een AI-agent:
+- Input (vraag of data)
+- Retrieval of informatieverwerking
+- Redenering (LLM of model)
+- Output (antwoord of actie)
+- Feedbackmechanisme
+
+In Semester 4 ontwikkelen studenten een AI-agent die:
+- Vragen van studenten beantwoordt
+- Informatie ophaalt uit een knowledge base
+- Embeddings gebruikt
+- Werkt met een vector database
+- Logging en feedback ondersteunt
+
+Belangrijke concepten:
+- Retrieval-Augmented Generation (RAG)
+- Embeddings
+- Vector databases (bijv. Chroma)
+- Confidence score
+- Escalatie naar docent
+
+De agent moet:
+- Betrouwbare antwoorden geven
+- Onzekerheid herkennen
+- Doorverwijzen bij onvoldoende informatie

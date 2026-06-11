@@ -1,0 +1,31 @@
+DATA PIPELINE MONITORING – DATA ENGINEERING
+
+Data pipeline monitoring gaat over het bewaken van datastromen binnen een datasysteem.
+
+Een data pipeline bestaat uit:
+- Extract
+- Transform
+- Load (ETL)
+
+Belangrijke aspecten van monitoring:
+- Logging
+- Error handling
+- Performance monitoring
+- Data kwaliteit
+
+Logging niveaus:
+- INFO
+- WARNING
+- ERROR
+- DEBUG
+
+Waarom monitoring belangrijk is:
+- Detecteren van fouten
+- Controleren van datakwaliteit
+- Waarborgen van betrouwbaarheid
+- Ondersteunen van troubleshooting
+
+Monitoring tools kunnen:
+- Fouten rapporteren
+- Processen volgen
+- Alerts genereren

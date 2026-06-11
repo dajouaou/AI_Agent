@@ -1,0 +1,23 @@
+SOURCE DATA MODEL DESIGN
+
+Een source data model beschrijft hoe data is gestructureerd in bronsystemen (OLTP).
+
+Kenmerken:
+- Genormaliseerde structuur
+- Gericht op transacties
+- Hoge consistentie
+
+Belangrijke concepten:
+- Entiteiten
+- Relaties
+- Primaire sleutel
+- Vreemde sleutel
+
+OLTP-systemen:
+- Veel kleine transacties
+- Snelle inserts en updates
+- Minder geschikt voor analyse
+
+Het source model vormt de basis voor:
+- ETL-processen
+- Datawarehouse ontwerp

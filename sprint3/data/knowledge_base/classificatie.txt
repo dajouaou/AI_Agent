@@ -1,0 +1,45 @@
+CLASSIFICATIE – MACHINE LEARNING (HC2)
+
+Classificatie is een supervised machine learning techniek waarbij een model leert om datapunten toe te wijzen aan vooraf gedefinieerde categorieën (labels).
+
+Doel van classificatie:
+- Voorspellen van een categorie
+- Leren op basis van gelabelde trainingsdata
+
+Belangrijke begrippen:
+- Features: invoervariabelen
+- Label: doelvariabele
+- Trainset en testset
+- Overfitting en underfitting
+
+Veelgebruikte classificatiemethoden:
+
+1. Decision Trees
+- Boomstructuur met beslissingsregels
+- Splitsingen op basis van informatiewinst of Gini-index
+- Makkelijk te interpreteren
+
+2. Random Forest
+- Ensemble van meerdere decision trees
+- Vermindert overfitting
+
+3. Logistic Regression
+- Gebruikt voor binaire classificatie
+- Output tussen 0 en 1 (kans)
+
+Evaluatiemethoden:
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion matrix
+
+Classificatie vs Clustering:
+- Classificatie gebruikt gelabelde data
+- Clustering ontdekt zelf groepen zonder labels
+
+Toepassingen:
+- Spamdetectie
+- Fraudepreventie
+- Ziekteclassificatie
+- Sentimentanalyse

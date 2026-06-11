@@ -1,0 +1,39 @@
+DATAWAREHOUSE DESIGN – DEAI (HC3)
+
+Een datawarehouse is een centrale opslagplaats voor gestructureerde data die wordt gebruikt voor analyse en rapportage (OLAP).
+
+OLTP vs OLAP:
+- OLTP: Operationele systemen, gericht op transacties
+- OLAP: Analytische systemen, gericht op rapportage en analyse
+
+Belangrijke concepten:
+- Feitentabel: bevat meetbare gegevens (bijv. omzet, aantal verkopen)
+- Dimensietabel: bevat beschrijvende attributen (bijv. tijd, klant, product)
+
+Sterschema:
+- Centrale feitentabel
+- Daaromheen meerdere dimensietabellen
+- Eenvoudig en performant
+
+Snowflake schema:
+- Dimensies worden verder genormaliseerd
+- Complexer maar minder redundantie
+
+Granulariteit:
+- Detailniveau van data in de feitentabel
+- Moet vooraf goed bepaald worden
+
+Slowly Changing Dimensions (SCD):
+- Type 1: overschrijven
+- Type 2: nieuwe rij toevoegen met historie
+- Type 3: beperkte historie in extra kolom
+
+ETL-proces:
+- Extract: data ophalen uit bronnen
+- Transform: data opschonen en structureren
+- Load: data laden in datawarehouse
+
+Doel van een datawarehouse:
+- Betrouwbare rapportages
+- Business intelligence
+- Ondersteunen van besluitvorming
