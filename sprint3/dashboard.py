@@ -265,7 +265,7 @@ with left:
         <p>Stel vragen over Semester 4. De agent gebruikt RAG en zoekt in de kennisbank.</p>
     </div>
     """, unsafe_allow_html=True)
-
+##stap 9 workflow
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.write(message["content"])
@@ -292,7 +292,7 @@ with left:
             prompt = "Hoe wordt semester 4 beoordeeld?"
         if st.button("Wat is het AI-Agent project?", use_container_width=True):
             prompt = "Wat is het AI-Agent project?"
-
+##stap 1 workflow
     typed_question = st.chat_input("Typ hier je vraag...")
 
     if typed_question:
@@ -302,6 +302,7 @@ with left:
         st.session_state.messages.append({"role": "user", "content": prompt})
 
         with st.spinner("De agent zoekt in de Semester 4 kennisbank..."):
+            ##stap 2 workflow
             result = run_agent(prompt)
 
         st.session_state.last_result = result

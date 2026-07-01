@@ -1,6 +1,6 @@
 from app.config import CONFIDENCE_THRESHOLD
 
-
+##stap 7 workflow
 def validate_answer(question, context):
     question_lower = question.lower()
     context_lower = context.lower()
@@ -21,9 +21,7 @@ def validate_answer(question, context):
     ]
 
     matches = sum(1 for word in important_words if word in context_lower)
-
     confidence += min(matches * 15, 40)
-
     semester_terms = [
         "deai",
         "pd3",
@@ -36,7 +34,6 @@ def validate_answer(question, context):
         "portfolio",
         "etl"
     ]
-
     if any(term in context_lower for term in semester_terms):
         confidence += 30
 

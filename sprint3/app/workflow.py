@@ -1,11 +1,12 @@
 from app.tools.search_tool import search_knowledge
 from app.tools.validation_tool import validate_answer
 from app.memory.state_manager import StateManager
+from app.tools.llm_tool import generate_answer_with_llm
 from app.logger import log_event
 
 memory = StateManager()
 
-
+##stap 6 workflow
 def create_answer(context):
     return (
         "Op basis van de Semester 4 kennisbank:\n\n"
@@ -29,7 +30,7 @@ def run_workflow(question):
     state["confidence"] = validation["confidence"]
 
     if validation["is_valid"]:
-        state["answer"] = create_answer(context)
+        state["answer"] = generate_answer_with_llm(question, context)
         state["status"] = "answered"
     else:
         state["answer"] = (
