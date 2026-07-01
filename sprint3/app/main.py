@@ -7,7 +7,7 @@ if __name__ == "__main__":
     result = run_agent(question)
 
     print("\nAntwoord:")
-    print(result["message"])
+    print(result["answer"])
 
     print("\nConfidence:")
     print(result["confidence"])

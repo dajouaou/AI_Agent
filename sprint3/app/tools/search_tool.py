@@ -3,12 +3,11 @@ from langchain_community.vectorstores import Chroma
 
 EMBEDDINGS_PATH = "data/embeddings"
 
-##stap 4 workflow
 def search_knowledge(query, k=3):
     embeddings = HuggingFaceEmbeddings(
         model_name="sentence-transformers/all-MiniLM-L6-v2"
     )
-##stap 5 workflow
+
     vector_db = Chroma(
         persist_directory=EMBEDDINGS_PATH,
         embedding_function=embeddings

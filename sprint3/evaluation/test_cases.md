@@ -63,9 +63,10 @@ Welke technologieën worden gebruikt binnen dit project?
 De AI-Agent noemt:
 - Python
 - LangChain
-- LangGraph
 - ChromaDB
-- OpenAI API
+- HuggingFace embeddings
+- Streamlit
+- LM Studio/Qwen
 
 ### Doel
 Controleren of de agent meerdere relevante gegevens uit documenten kan combineren.

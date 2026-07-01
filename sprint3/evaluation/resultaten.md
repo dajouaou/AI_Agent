@@ -29,7 +29,7 @@ Vraag:
 Welke technologieën gebruiken we?
 
 Resultaat:
-De agent vindt Python, LangChain, LangGraph, ChromaDB en OpenAI API.
+De agent vindt Python, LangChain, ChromaDB, HuggingFace embeddings, Streamlit en LM Studio/Qwen.
 
 Status:
 Geslaagd

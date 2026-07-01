@@ -1,4 +1,6 @@
-from langchain_openai import ChatOpenAI
-from langgraph.graph import StateGraph
+from openai import OpenAI
+import streamlit
+import chromadb
+import langchain
 
-print("LangChain en LangGraph werken!")
+print("LM Studio, Streamlit, ChromaDB en LangChain imports werken.")
