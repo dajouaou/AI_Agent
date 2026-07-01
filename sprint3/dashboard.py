@@ -391,6 +391,7 @@ with right:
     st.markdown('<div class="feature">Niveautests</div>', unsafe_allow_html=True)
     st.markdown('<div class="feature">AI-Agent project</div>', unsafe_allow_html=True)
     st.markdown('<div class="feature">Beoordeling</div>', unsafe_allow_html=True)
+    st.markdown('<div class="feature">LM Studio/Qwen lokale LLM</div>', unsafe_allow_html=True)
 
     st.divider()
 
