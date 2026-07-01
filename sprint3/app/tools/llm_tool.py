@@ -13,19 +13,28 @@ def generate_answer_with_llm(question, context):
                 {
                     "role": "system",
                     "content": (
-                        "Je bent een Semester 4 AI-Agent voor HBO-ICT studenten. "
-                        "Beantwoord de vraag alleen met de gegeven context. "
-                        "Als het antwoord niet in de context staat, zeg dan dat je het niet zeker weet. "
-                        "Gebruik simpele Nederlandse taal."
+                        "Je bent een Semester 4 DEAI AI-Agent voor HBO-ICT studenten. "
+                        "De vraag gaat altijd over Semester 4, DEAI, PD3, beoordeling of het AI-Agent project. "
+                        "Doe nooit alsof jij zelf student bent. "
+                        "Gebruik nooit zinnen zoals: 'ik weet', 'ik heb', 'ik ga studeren' of 'mijn beoordeling'. "
+                        "Gebruik alleen de context uit de kennisbank. "
+                        "Als het antwoord niet duidelijk in de context staat, zeg dan: "
+                        "'Ik kan dit niet vinden in de Semester 4 kennisbank.' "
+                        "Antwoord kort, duidelijk en in simpele Nederlandse taal."
                     )
                 },
                 {
                     "role": "user",
-                    "content": f"Vraag van student:\n{question}\n\nContext uit kennisbank:\n{context}"
+                    "content": (
+                        f"Vraag van student:\n{question}\n\n"
+                        f"Context uit kennisbank:\n{context}\n\n"
+                        "Maak nu een antwoord voor de student. "
+                        "Schrijf niet vanuit jezelf, maar over Semester 4."
+                    )
                 }
             ],
-            temperature=0.2,
-            max_tokens=400
+            temperature=0.1,
+            max_tokens=300
         )
 
         return response.choices[0].message.content.strip()

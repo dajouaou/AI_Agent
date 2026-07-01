@@ -1,6 +1,3 @@
-from asyncio import tools
-
-
 def test_deadline_question():
     vraag = "Wanneer is de deadline van Sprint 3?"
     verwacht = "5 juni 2026"
@@ -34,9 +31,16 @@ def test_unknown_question():
 
 
 def test_tools_question():
-  tools = ["Python", "LangChain", "ChromaDB", "HuggingFace embeddings", "Streamlit", "LM Studio/Qwen"]
+    tools = [
+        "Python",
+        "LangChain",
+        "ChromaDB",
+        "HuggingFace embeddings",
+        "Streamlit",
+        "LM Studio/Qwen"
+    ]
 
-assert "Python" in tools
-assert "LangChain" in tools
-assert "ChromaDB" in tools
-assert "LM Studio/Qwen" in tools
+    assert "Python" in tools
+    assert "LangChain" in tools
+    assert "ChromaDB" in tools
+    assert "LM Studio/Qwen" in tools
